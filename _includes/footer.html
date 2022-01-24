@@ -3,6 +3,7 @@
 <!-- Footer -->
 <footer id="footer">
 	<div class="inner">
+		{% comment %}
 		<section>
 			<h2>Get in touch</h2>
 			<form method="post" action="https://formspree.io/{{ site.email }}"
@@ -23,6 +24,7 @@
 				</ul>
 			</form>
 		</section>
+		{% endcomment %}
 		<section>
 			<h2>Follow</h2>
 			<ul class="icons">
@@ -39,7 +41,7 @@
 				<li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
 				{% endif %}
 				{% if site.github_username %}
-				<li><a href="https://github.com/{{ site.github_username }}" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="https://github.com/{{ site.github_username }}" target="_blank" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
 				{% endif %}
 				{% if site.500px_username %}
 				<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
@@ -53,9 +55,8 @@
 			</ul>
 		</section>
 		<ul class="copyright">
-			<li>&copy; {{ site.title }}. All rights reserved</li>
+			<li>&copy; 2021 {{ site.title }}. All rights reserved</li>
 			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			<li>Jekyll integration: <a href="http://andrewbanchi.ch">Andrew Banchich</a></li>
 		</ul>
 	</div>
 </footer>

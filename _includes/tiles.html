@@ -1,14 +1,16 @@
 <section class="tiles">
 
-{% for post in site.posts limit:site.front-page-posts %}
+{% for category in site.data.category_list %}
+{% capture category_name %}{{ category | first }}{% endcapture %}
+{% assign page_category = site.data.category_list[category_name] %}
 	<article class="style{{ forloop.index | plus:1 }}">
 		<span class="image">
-			<img src="{{ site.url }}{{ site.baseurl }}/images/pic01.jpg" alt="" />
+			<img src="{{ site.url }}{{ site.baseurl }}/images/pic04.jpg" alt="" />
 		</span>
-		<a href="{{ post.url | prepend:site.baseurl | prepend:site.url }}">
-			<h2>{{ post.title }}</h2>
+		<a href="{{ site.baseurl }}/{{ page_category.name | slugify }}">
+			<h0>{{ page_category.name }}</h0>
 			<div class="content">
-				<p>{{ post.excerpt }}</p>
+				<p>{{ page_category.description }}</p>
 			</div>
 		</a>
 	</article>
