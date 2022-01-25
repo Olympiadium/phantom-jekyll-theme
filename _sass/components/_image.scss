@@ -16,11 +16,6 @@
 			border-radius: _size(border-radius);
 			display: block;
 		}
-		&.invisible {
-			img {
-				opacity: 0;
-			}
-		}
 
 		&.left,
 		&.right {

@@ -17,13 +17,12 @@
 	}
 
 	ul {
-		list-style-type: square;
-		list-style-position: outside;
-		margin: 0 0 _size(element-margin)*0.5 0;
-		padding-left: 2em;
+		list-style: disc;
+		margin: 0 0 _size(element-margin) 0;
+		padding-left: 1em;
 
 		li {
-			padding-left: .5em;
+			padding-left: 0.5em;
 		}
 
 		&.alt {
@@ -39,10 +38,6 @@
 					padding-top: 0;
 				}
 			}
-		}
-		
-		&.inbox {
-			margin: 0;
 		}
 
 		&.icons {
